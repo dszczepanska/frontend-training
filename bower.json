@@ -1,0 +1,18 @@
+{
+  "name": "frontend-training",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Dagna Szczepanska <dagna.szczepanska@cybercom.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dszczepanska/frontend-training",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
