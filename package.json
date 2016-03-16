@@ -12,5 +12,11 @@
   "bugs": {
     "url": "https://github.com/dszczepanska/frontend-training/issues"
   },
-  "homepage": "https://github.com/dszczepanska/frontend-training#readme"
+  "homepage": "https://github.com/dszczepanska/frontend-training#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
 }
