@@ -19,5 +19,8 @@
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "load-grunt-tasks": "^3.4.1"
+  },
+  "dependencies": {
+    "grunt-contrib-copy": "^1.0.0"
   }
 }
