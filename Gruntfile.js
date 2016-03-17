@@ -10,6 +10,15 @@ module.exports = function(grunt) {
 			  bower: '<%= cfg.paths.root %>/bower_components'
 		  }
 	  },
+	  clean: {	
+	  
+			output: '<%= cfg.paths.output %>',
+			options: {
+				force: true
+			}
+			
+		  
+		},
 	  copy:  {
 		main: {
 			src: 'src/*',
@@ -37,7 +46,7 @@ module.exports = function(grunt) {
     },
 	watch: {
 	  
-		files: ['index.html'],
+		files: ['<%= cfg.paths.output %>/index.html'],
 		tasks: [],
 		options: {
 		  livereload: true,
@@ -49,9 +58,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
 
-  grunt.registerTask('default', ['connect', 'watch']);
+  grunt.registerTask('default', ['clean copy connect', 'watch']);
   grunt.registerTask('help', 'displays console help', function() {
 	grunt.log.writeln('Welcome to grunt help');  
 	grunt.log.subhead('Maint tasks');  
